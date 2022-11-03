@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AForbes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link href="./assets/styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <header class="row m-0">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid px-5 py-3">
+            <a class="link no-underline" href="#home" alt="to home"
+              ><h3 id="logo" class="fadeIn m-0">A. FORBES</h3></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul
+                class="navbar-nav d-flex ps-0 justify-content-center align-items-center fadeIn"
+              >
+                <li>
+                  <a class="px-4 py-2 mx-3 fs-5 link" href="#home" alt="to home"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="px-4 py-2 mx-3 fs-5 link"
+                    href="#about"
+                    alt="to about"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="px-4 py-2 mx-3 fs-5 link"
+                    href="#portfolio"
+                    alt="to portfolio"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="px-4 py-2 mx-3 fs-5 contactCTA light-text"
+                    href="#contact"
+                    alt="to contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section
+        class="welcome-splash m-0 row px-5 flex-column flex-md-row justify-content-md-between justify-content-center"
+        id="home"
+      >
+        <div
+          class="col-md-5 col-12 d-flex flex-column justify-content-center fadeIn"
+        >
+          <h1 class="light-text text-center text-md-start">Lorem Ipsum</h1>
+          <p class="fs-5 text-center text-md-start light-text">
+            dolor sit amet, consectetur adipiscing elit. Praesent finibus odio
+            vitae porttitor consequat. Nunc viverra aliquam sem, ecitur
+            ultricies odio.
+          </p>
+        </div>
+        <div
+          class="col-md-4 mt-5 col-12 d-flex align-items-end justify-content-center justify-content-md-end"
+        >
+          <ul class="d-flex p-0 py-md-4 fadeIn">
+            <li class="me-3 social-icon">
+              <a href="#"
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/AP+gvaeTAAACHElEQVRYhe2XO2gUURSGvxsfMWIQoiiKsUplIWJQfLRB7WxsLIJoaxMkhQhaCD6wi8HYBAsbWy0EMTaCQhCtVHxgIQYWi0AiKzHEdT+L3cA6zkz27qMI7A8Dc+/Mf+537pyZewc66mgVK7Q6oDoAnAMOAZuAAvAEuB9CWEjc2x9CmMkLdlKNhlSDekldMl3f1MPqZvWU+lQdyQu4VV1UbzQAczkDolaL6u/q+St1XV7AYzXGO+qaOkH2qKU6YJY1rZ6oJrA/K+hwwvRc3VUHzFgEiDXg1/OCDqUYf6ijaneO73UkTFm9Yl5tqr1qMSNAwUqB7k7xfYmEuZc2fldtI4RQBCYzWHcA14Cv1ZkYU8+qQ8BChidLsyveoXarPeqbyExjdSFt/K5E+wwwBbwAipHZxuh7WufaRPsdcLR6tFOf0zr/qWYr35WPwEAbQWaB7SGEcvJCsoD/ACOAbYR5lgbyH0wV6DFwHii1CeZRtEMdVB+qv1r4FhXU9VljJgt4GWQbMAH0RmeRr5shhKVolzrZwhlR/WDOkrISTI861SKQknqkIZAaoI3qVfVnkzCjTYEkoPrU01Z2a7Eat4GdYxZIUI+r7xsAudU0iJUF86B6UX3bAMS8OtwMwE71tpXNVKMqqw/U/qZmowZqUL2rzkVAzKkT6t5mxs58nuoG4ACV/599wBagr+qZB2aAT8BLYDqE0K7lo6OOVof+AsV8DJ5sxewYAAAAAElFTkSuQmCC"
+                  alt="twitter"
+              /></a>
+            </li>
+            <li class="ms-3 social-icon">
+              <a href="#"
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/AP+gvaeTAAAB3ElEQVRYhe2YO0tcQRiGn08DGliJIFqoVYKQVCLrpbBKk1LQPyGSNk26IKRMHZLGC1aCIgr+AAsFyQYbq0CKVDaBiDEB2fVNkT1kMs65iGdWhX2quc/DmZnvnDnQJoyFCiVVgBGgI8Kcl8AXM/uZ2UpSj6QVSQ3FpSFpWVJPlsxKZAmfJXd+c0QqwClxliaNS6DXzM7wJo61R7LoAJ64mVC6lXQmiQcFGu8DG8AAMA/0RpLKlfkKPDezCwBJB8BWLJm8pfmeiDT5FkukiMyEpLeSnkmaBt7HlHGPdhX4FHOyFMbNrAa3d4KC5MnsmAMwlFSYB1AD9oAZoA/oAp4Ci8Cva1lJqgbC9bbXZjCpCPSfk5T24p2UdJ7ySqgm7UpbJjPbNLMrks26Q+BN3hil7hlJU5JeS5oNPKWPQD2rf5EIXFTkBbDLv/D+DniV1JvZqaRjYDRtjDKfzIIjAvBSUqfX5iRrgDJlhr18N9DvlV2QQZkyoZN0rfHvVdBrKW2ZNO6UTF7Qq0pad/IPk4RXDvA40P+DpN/ueFmTud8zY8DnHLkYjJnZkS9TAX7wfxSNTQN4ZGbn4OyZ5t13rYUiAKuJyBX09669LKl+gytrEeqSluTdte/uX4g2Dn8AwG0JSbSqj2sAAAAASUVORK5CYII="
+                  alt="linkedin"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="row p-0 m-0 blk-bg">
+        <ul class="col-12 d-flex w-100 justify-content-center py-3 m-0 fadeIn">
+          <li class="fs-5 mx-2 mx-md-5 light-text">Sports</li>
+          <li class="fs-5 mx-2 mx-md-5 light-text">-</li>
+          <li class="fs-5 mx-2 mx-md-5 light-text">TV</li>
+          <li class="fs-5 mx-2 mx-md-5 light-text">-</li>
+          <li class="fs-5 mx-2 mx-md-5 light-text">Podcast</li>
+        </ul>
+      </div>
+
+      <div id="about"></div>
+      <section
+        class="row d-flex flex-column flex-md-row justify-content-center align-items-center section-spacing"
+      >
+        <div class="col-md-5 col-8 mx-5">
+          <h2 class="pb-2 text-center text-md-start">About</h2>
+          <p class="fs-5 pb-4 text-center text-md-start">
+            Dr. Ali Forbes is a tenure-track assistant professor of electronic
+            media at Texas State University. She completed her PhD at Arizona
+            State's Walter Cronkite School of Journalism and Mass Communication
+            in July of 2021. Forbes comes from eastern Canada, where her family
+            still lives.
+          </p>
+          <p class="fs-5 pb-4 text-center text-md-start">
+            Her professional background is in live broadcast production for
+            radio, television and online and she teaches classes in studio
+            production, live sports production, advanced issues and ethics in
+            sports journalism. She has produced content for SportsCenter, ESPN,
+            PGA Live and the Pac12 Network, including working on-air as an
+            analyst for men's and women's Division I basketball and soccer.
+          </p>
+          <p class="fs-5 pb-4 text-center text-md-start">
+            Forbes' research examines the culture of sports video games and the
+            role of eSports in the overall sports media landscape.
+          </p>
+          <button
+            class="px-4 py-2 fs-5 contactCTA light-text d-none d-md-block"
+          >
+            Contact
+          </button>
+        </div>
+        <div class="col-md-3 col-10 mx-4 d-flex flex-column">
+          <img
+            id="headshot"
+            src="./assets/images/headshot.jpg"
+            alt="headshot"
+          />
+          <button
+            class="px-4 w-50 align-self-center my-5 py-2 fs-5 contactCTA light-text d-block d-md-none"
+          >
+            Contact
+          </button>
+        </div>
+      </section>
+
+      <div id="cam-splash"></div>
+      <div id="portfolio"></div>
+      <section
+        class="row d-flex flex-column flex-md-row justify-content-center align-items-center section-spacing"
+      >
+        <div class="col-8 col-md-5 mx-5">
+          <h2 class="pb-2 text-center">Portfolio</h2>
+          <p class="fs-5 pb-4 text-center">
+            dolor sit amet, consectetur adipiscing elit. Praesent finibus odio
+            vitae porttitor consequat. Nunc viverra aliquam sem, ecitur
+            ultricies odio. Praesent finibus odio vitae porttitor consequat.
+            Nunc viverra aliquam sem, ecitur ultricies odio. Praesent finibus
+            odio vitae porttitor consequat. Nunc viverra aliquam sem, ecitur
+            ultricies odio.
+          </p>
+        </div>
+        <div class="col-md-8 col-10">
+          <div
+            class="accordion accordion-flush"
+            id="accordionPanelsStayOpenExample"
+          >
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button
+                  class="accordion-button fs-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  Broadcast
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne"
+              >
+                <div class="accordion-body">
+                  <div
+                    class="d-flex flex-wrap justify-content-center align-items-center"
+                  >
+                    <div class="mediaItem m-4 d-flex flex-column">
+                      <img
+                        src="./assets/images/mediaItem.jpg"
+                        alt="media item"
+                      />
+                      <div class="mt-2 p-3 d-flex justify-content-between">
+                        <p><b>Video Title</b></p>
+                        <p>runtime</p>
+                      </div>
+                      <p class="px-3 pb-3">Video Description</p>
+                    </div>
+                    <div class="mediaItem m-4 d-flex flex-column">
+                      <img
+                        src="./assets/images/mediaItem.jpg"
+                        alt="media item"
+                      />
+                      <div class="mt-2 p-3 d-flex justify-content-between">
+                        <p><b>Video Title</b></p>
+                        <p>runtime</p>
+                      </div>
+                      <p class="px-3 pb-3">Video Description</p>
+                    </div>
+                    <div class="mediaItem m-4 d-flex flex-column">
+                      <img
+                        src="./assets/images/mediaItem.jpg"
+                        alt="media item"
+                      />
+                      <div class="mt-2 p-3 d-flex justify-content-between">
+                        <p><b>Video Title</b></p>
+                        <p>runtime</p>
+                      </div>
+                      <p class="px-3 pb-3">Video Description</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button
+                  class="accordion-button collapsed fs-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Media
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed fs-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Research and Publications
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
+              >
+                <div class="accordion-body">
+                  <div class="research-link">
+                    <a href="/" alt="link"
+                      ><h3>Example for the title of a link</h3></a
+                    >
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam.
+                    </p>
+                  </div>
+                  <div class="research-link">
+                    <a href="/" alt="link"
+                      ><h3>Example for the title of a link</h3></a
+                    >
+
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam.
+                    </p>
+                  </div>
+                  <div class="research-link">
+                    <a href="/" alt="link"
+                      ><h3>Example for the title of a link</h3></a
+                    >
+
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button
+                  class="accordion-button collapsed fs-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
+                >
+                  Teaching
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingFour"
+              >
+                <div class="accordion-body">
+                  <div class="d-flex flex-row history-box">
+                    <div class="history-bar"></div>
+                    <div class="py-4">
+                      <h3>Work Title</h3>
+                      <p class="history-box-date">2020-2022</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row history-box">
+                    <div class="history-bar"></div>
+                    <div class="py-4">
+                      <h3>Work Title</h3>
+                      <p class="history-box-date">2020-2022</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row history-box">
+                    <div class="history-bar"></div>
+                    <div class="py-4">
+                      <h3>Work Title</h3>
+                      <p class="history-box-date">2020-2022</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row history-box">
+                    <div class="history-bar"></div>
+                    <div class="py-4">
+                      <h3>Work Title</h3>
+                      <p class="history-box-date">2020-2022</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                <button
+                  class="accordion-button collapsed fs-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFive"
+                >
+                  Photo Gallery
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingFive"
+              >
+                <div class="accordion-body d-flex justify-content-center">
+                  <div
+                    class="row my-4 flex-column flex-lg-row align-self-lg-start align-content-center justify-content-center"
+                  >
+                    <div class="col-4 d-flex flex-column p-0">
+                      <img src="./assets/images/gallery/one.jpg" />
+                      <img src="./assets/images/gallery/two.jpg" />
+                      <img src="./assets/images/gallery/three.jpg" />
+                    </div>
+                    <div class="col-4 d-flex flex-column p-0">
+                      <img src="./assets/images/gallery/four.jpg" />
+                      <img src="./assets/images/gallery/five.jpg" />
+                      <img src="./assets/images/gallery/six.jpg" />
+                    </div>
+                    <div class="col-4 d-flex flex-column p-0">
+                      <img src="./assets/images/gallery/seven.jpg" />
+                      <img src="./assets/images/gallery/eight.jpg" />
+                      <img src="./assets/images/gallery/nine.jpg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                <button
+                  class="accordion-button collapsed fs-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseSix"
+                >
+                  Other
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseSix"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingSix"
+              >
+                <div class="accordion-body"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="contact" class="py-5"></div>
+      <section
+        class="row d-flex flex-column flex-md-row justify-content-center align-items-center"
+      >
+        <div class="col-md-5 col-12 mx-5 ms-auto">
+          <h2 class="pb-2 text-center text-md-start">Contact</h2>
+          <p class="fs-5 pb-4 text-center text-md-start">
+            dolor sit amet, consectetur adipiscing elit.
+          </p>
+
+          <form
+            class="d-flex flex-column"
+            action="https://formsubmit.co/zieksanchez3@gmail.com"
+            method="POST"
+          >
+            <label for="email"><b>Email</b></label>
+            <input
+              class="mb-4 p-2 input-box"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
+            <label for="message"><b>Comment</b></label>
+            <textarea
+              class="mb-5 p-2 input-box"
+              rows="12"
+              cols="1"
+              name="message"
+              placeholder="Write message here"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              class="px-4 py-2 fs-5 align-self-center contactCTA light-text"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <div
+          class="col-md-3 col-10 p-5 ms-auto me-0 d-none d-md-flex flex-column align-items-center blk-bg align-self-start"
+        >
+          <h4 class="light-text">Contact Info</h4>
+          <p class="light-text m-0 pt-2">Email</p>
+          <p class="light-text">loremipsum@txstate.edu</p>
+          <ul class="d-flex mt-4 p-0 fadeIn">
+            <li class="mx-3 social-icon">
+              <a href="#"
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/AP+gvaeTAAACHElEQVRYhe2XO2gUURSGvxsfMWIQoiiKsUplIWJQfLRB7WxsLIJoaxMkhQhaCD6wi8HYBAsbWy0EMTaCQhCtVHxgIQYWi0AiKzHEdT+L3cA6zkz27qMI7A8Dc+/Mf+537pyZewc66mgVK7Q6oDoAnAMOAZuAAvAEuB9CWEjc2x9CmMkLdlKNhlSDekldMl3f1MPqZvWU+lQdyQu4VV1UbzQAczkDolaL6u/q+St1XV7AYzXGO+qaOkH2qKU6YJY1rZ6oJrA/K+hwwvRc3VUHzFgEiDXg1/OCDqUYf6ijaneO73UkTFm9Yl5tqr1qMSNAwUqB7k7xfYmEuZc2fldtI4RQBCYzWHcA14Cv1ZkYU8+qQ8BChidLsyveoXarPeqbyExjdSFt/K5E+wwwBbwAipHZxuh7WufaRPsdcLR6tFOf0zr/qWYr35WPwEAbQWaB7SGEcvJCsoD/ACOAbYR5lgbyH0wV6DFwHii1CeZRtEMdVB+qv1r4FhXU9VljJgt4GWQbMAH0RmeRr5shhKVolzrZwhlR/WDOkrISTI861SKQknqkIZAaoI3qVfVnkzCjTYEkoPrU01Z2a7Eat4GdYxZIUI+r7xsAudU0iJUF86B6UX3bAMS8OtwMwE71tpXNVKMqqw/U/qZmowZqUL2rzkVAzKkT6t5mxs58nuoG4ACV/599wBagr+qZB2aAT8BLYDqE0K7lo6OOVof+AsV8DJ5sxewYAAAAAElFTkSuQmCC"
+                  alt="twitter"
+              /></a>
+            </li>
+            <li class="mx-3 social-icon">
+              <a href="#"
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/AP+gvaeTAAAB3ElEQVRYhe2YO0tcQRiGn08DGliJIFqoVYKQVCLrpbBKk1LQPyGSNk26IKRMHZLGC1aCIgr+AAsFyQYbq0CKVDaBiDEB2fVNkT1kMs65iGdWhX2quc/DmZnvnDnQJoyFCiVVgBGgI8Kcl8AXM/uZ2UpSj6QVSQ3FpSFpWVJPlsxKZAmfJXd+c0QqwClxliaNS6DXzM7wJo61R7LoAJ64mVC6lXQmiQcFGu8DG8AAMA/0RpLKlfkKPDezCwBJB8BWLJm8pfmeiDT5FkukiMyEpLeSnkmaBt7HlHGPdhX4FHOyFMbNrAa3d4KC5MnsmAMwlFSYB1AD9oAZoA/oAp4Ci8Cva1lJqgbC9bbXZjCpCPSfk5T24p2UdJ7ySqgm7UpbJjPbNLMrks26Q+BN3hil7hlJU5JeS5oNPKWPQD2rf5EIXFTkBbDLv/D+DniV1JvZqaRjYDRtjDKfzIIjAvBSUqfX5iRrgDJlhr18N9DvlV2QQZkyoZN0rfHvVdBrKW2ZNO6UTF7Qq0pad/IPk4RXDvA40P+DpN/ueFmTud8zY8DnHLkYjJnZkS9TAX7wfxSNTQN4ZGbn4OyZ5t13rYUiAKuJyBX09669LKl+gytrEeqSluTdte/uX4g2Dn8AwG0JSbSqj2sAAAAASUVORK5CYII="
+                  alt="linkedin"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer
+        class="row p-5 d-flex blk-bg flex-column flex-md-row justify-content-center align-items-center section-spacing"
+      >
+        <h3 id="logo" class="fadeIn m-0 text-center light-text">A. FORBES</h3>
+        <p class="light-text d-md-none text-center">loremipsum@txstate.edu</p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

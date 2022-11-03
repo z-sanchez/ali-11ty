@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Nanum+Myeongjo:wght@700&family=Overpass:wght@300;500;700&family=Oxygen:wght@400;700&family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  line-height: 1.6;
+  font-family: openSans, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.light-text {
+  color: white;
+}
+
+.fadeIn {
+  animation: fadein 3s;
+}
+
+.section-spacing {
+  margin: 20vh 0;
+}
+
+/* Nav-Bar */
+
+header {
+  position: fixed;
+  background: white;
+  width: 100vw;
+  z-index: 5;
+}
+
+.link,
+.link:hover,
+.link:visited {
+  color: black;
+  text-decoration: none;
+  font-family: overpass;
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+}
+
+.link {
+  border-bottom: solid 0.15em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 300ms;
+  cursor: pointer;
+}
+
+.link:hover {
+  animation: fadein-underline ease 1s;
+  border-color: rgba(0, 0, 0, 1);
+}
+
+#logo {
+  font-family: overpass;
+  font-weight: 500;
+}
+
+.no-underline,
+.no-underline:hover {
+  border-bottom: 0;
+  animation: none;
+}
+
+.contactCTA {
+  border: none;
+  background-color: black;
+  text-decoration: none;
+  font-family: overpass;
+  font-weight: 300;
+  outline: 3px solid rgba(0, 0, 0, 0);
+}
+
+.contactCTA:hover {
+  color: black;
+  background-color: white;
+  outline: 3px solid black;
+  transition: outline 1s ease 0s;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+  color: black;
+}
+
+/* First Section */
+
+.welcome-splash {
+  background-image: url("../images/welcome-splash.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 60%;
+}
+
+#cam-splash {
+  background-image: url("../images/cam-spash.jpg");
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.blk-bg {
+  background-color: black;
+}
+
+/* About Section */
+
+#headshot {
+  width: 100%;
+  min-height: 600px;
+  min-width: 340px;
+  object-fit: cover;
+}
+
+.social-icon {
+  position: relative;
+  top: 0;
+  transition: top ease 0.2s;
+}
+
+.social-icon:hover {
+  top: -10px;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #ffffff;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.mediaItem {
+  width: 25%;
+  height: auto;
+  min-width: 250px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.26);
+}
+
+.mediaItem img {
+  width: 100%;
+}
+
+.research-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.research-link h3 {
+  font-family: overpass;
+  font-weight: 400;
+  text-decoration: none;
+  width: fit-content;
+  margin: 20px 0 0 0;
+  border-bottom: solid 0.1em rgba(255, 255, 255, 1);
+  transition: text-decoration-color 300ms;
+  cursor: pointer;
+}
+
+.research-link h3:hover {
+  animation: fadein-underline ease 1s;
+  border-bottom: solid 0.1em rgba(0, 0, 0, 1);
+}
+
+.research-link p {
+  font-family: overpass;
+  font-weight: 300;
+  margin: 10px 0 30px 0;
+}
+
+.input-box,
+.input-box:focus-visible {
+  background-color: #f0f0f0;
+  outline: none;
+  border: none;
+}
+
+.history-box {
+  cursor: pointer;
+  transition: margin ease-in-out 300ms;
+}
+
+.history-box:hover {
+  margin: 10px 0;
+}
+
+.history-box:hover .history-bar {
+  width: 4px;
+}
+
+.history-box-date {
+  color: rgba(0, 0, 0, 0.329);
+  font-weight: 500;
+}
+
+.history-bar {
+  background-color: black;
+  width: 3px;
+  margin-right: 3%;
+  transition: width ease-in-out 100ms;
+}
+
+@keyframes fadein-underline {
+  from {
+    border-bottom: solid 0.1em rgba(255, 255, 255, 1);
+  }
+  to {
+    border-bottom: solid 0.1em rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-nav li {
+    margin: 5% 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .welcome-splash {
+    background-position: 75% 0%;
+  }
+}

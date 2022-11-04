@@ -11,12 +11,13 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link href="./assets/styles/style.css" rel="stylesheet" />
+    <link href="/assets/styles/style.css" rel="stylesheet" />
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 <body>
+  <div class="container-fluid p-0">
+
     
-<div class="container-fluid p-0">
   <header class="row m-0">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid px-5 py-3">
@@ -42,27 +43,35 @@
             class="navbar-nav d-flex ps-0 justify-content-center align-items-center fadeIn"
           >
             <li>
-              <a class="px-4 py-2 mx-3 fs-5 link" href="#home" alt="to home"
+              <a class="px-4 py-2 mx-3 fs-5 link" href="/#home" alt="to home"
                 >Home</a
               >
             </li>
             <li>
-              <a class="px-4 py-2 mx-3 fs-5 link" href="#about" alt="to about"
+              <a class="px-4 py-2 mx-3 fs-5 link" href="/#about" alt="to about"
                 >About</a
               >
             </li>
             <li>
               <a
                 class="px-4 py-2 mx-3 fs-5 link"
-                href="#portfolio"
+                href="/#portfolio"
                 alt="to portfolio"
                 >Portfolio</a
               >
             </li>
             <li>
               <a
+                class="px-4 py-2 mx-3 fs-5 link"
+                href="./gallery"
+                alt="to gallery"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
                 class="px-4 py-2 mx-3 fs-5 contactCTA light-text"
-                href="#contact"
+                href="/#contact"
                 alt="to contact"
                 >Contact</a
               >
@@ -72,6 +81,8 @@
       </div>
     </nav>
   </header>
+    
+
 
   <section
     class="welcome-splash m-0 row px-5 flex-column flex-md-row justify-content-md-between justify-content-center"
@@ -275,8 +286,7 @@
     <p>
         Description for research link
     </p>
-</div>
-            </div>
+</div></div>
           </div>
         </div>
 
@@ -298,56 +308,25 @@
             class="accordion-collapse collapse"
             aria-labelledby="panelsStayOpen-headingFour"
           >
-            <div class="accordion-body">
-              <div class="d-flex flex-row history-box">
-                <div class="history-bar"></div>
-                <div class="py-4">
-                  <h3>Work Title</h3>
-                  <p class="history-box-date">2020-2022</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
-                  </p>
-                </div>
-              </div>
-              <div class="d-flex flex-row history-box">
-                <div class="history-bar"></div>
-                <div class="py-4">
-                  <h3>Work Title</h3>
-                  <p class="history-box-date">2020-2022</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
-                  </p>
-                </div>
-              </div>
-              <div class="d-flex flex-row history-box">
-                <div class="history-bar"></div>
-                <div class="py-4">
-                  <h3>Work Title</h3>
-                  <p class="history-box-date">2020-2022</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
-                  </p>
-                </div>
-              </div>
-              <div class="d-flex flex-row history-box">
-                <div class="history-bar"></div>
-                <div class="py-4">
-                  <h3>Work Title</h3>
-                  <p class="history-box-date">2020-2022</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div class="accordion-body"><div class="d-flex flex-row history-box">
+    <div class="history-bar"></div>
+    <div class="py-4">
+        <h3>Work Title One</h3>
+        <p class="history-box-date">2020-2022</p>
+        <p>
+            This is a description for work title
+        </p>
+    </div>
+</div><div class="d-flex flex-row history-box">
+    <div class="history-bar"></div>
+    <div class="py-4">
+        <h3>Work Title 2</h3>
+        <p class="history-box-date">2020-2022</p>
+        <p>
+            Lore IpmsumLore Ipmsum Lore Ipmsum Lore Ipmsum Lore Ipmsum
+        </p>
+    </div>
+</div></div>
           </div>
         </div>
 
@@ -484,21 +463,22 @@
     </div>
   </section>
 
-  <footer
+
+
+      <footer
     class="row p-5 d-flex blk-bg flex-column flex-md-row justify-content-center align-items-center section-spacing"
   >
     <h3 id="logo" class="fadeIn m-0 text-center light-text">A. FORBES</h3>
     <p class="light-text d-md-none text-center">loremipsum@txstate.edu</p>
   </footer>
-</div>
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
   crossorigin="anonymous"
 ></script>
-<script src="./script.js"></script>
-
+<script src="/script.js"></script>
     
+  </div>
     <script>
     if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {

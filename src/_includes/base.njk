@@ -11,12 +11,17 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link href="./assets/styles/style.css" rel="stylesheet" />
+    <link href="/assets/styles/style.css" rel="stylesheet" />
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 <body>
+  <div class="container-fluid p-0">
+
+    {% include 'header.njk' %}
     {{ content | safe }}
+    {% include 'footer.njk'%}
     
+  </div>
     <script>
     if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {

@@ -243,39 +243,6 @@ layout: 'base.njk'
                 {% include 'researchAndPub-snippet.njk' %}
 
               {%- endfor -%}
-
-              {# <div class="research-link">
-                <a href="/" alt="link"
-                  ><h3>Example for the title of a link</h3></a
-                >
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
-              </div>
-              <div class="research-link">
-                <a href="/" alt="link"
-                  ><h3>Example for the title of a link</h3></a
-                >
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
-              </div>
-              <div class="research-link">
-                <a href="/" alt="link"
-                  ><h3>Example for the title of a link</h3></a
-                >
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
-              </div> #}
             </div>
           </div>
         </div>
@@ -299,7 +266,13 @@ layout: 'base.njk'
             aria-labelledby="panelsStayOpen-headingFour"
           >
             <div class="accordion-body">
-              <div class="d-flex flex-row history-box">
+              {%- for work in collections.work -%}
+
+                {% include 'work-snippet.njk' %}
+
+              {%- endfor -%}
+
+              {# <div class="d-flex flex-row history-box">
                 <div class="history-bar"></div>
                 <div class="py-4">
                   <h3>Work Title</h3>
@@ -346,7 +319,7 @@ layout: 'base.njk'
                     aliqua. Ut enim ad minim veniam.
                   </p>
                 </div>
-              </div>
+              </div> #}
             </div>
           </div>
         </div>

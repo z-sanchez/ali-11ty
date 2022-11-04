@@ -40,4 +40,4 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Caption", name: "caption", widget: "string" }
-      - { label: "Image Source", name: "imgSource", widget: "image" }
+      - { label: "Image Source", name: "imageSource", widget: "image" }

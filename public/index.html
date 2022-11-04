@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link href="./assets/styles/style.css" rel="stylesheet" />
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 <body>
     
@@ -197,6 +198,13 @@
               <div
                 class="d-flex flex-wrap justify-content-center align-items-center"
               ><div class="mediaItem m-4 d-flex flex-column">
+    <img src=/assets/uploads/download.jpeg alt="media item" />
+    <div class="mt-2 p-3 d-flex justify-content-between">
+        <p><b>video 4</b></p>
+        <p>1:00min</p>
+    </div>
+    <p class="px-3 pb-3">This is a test</p>
+</div><div class="mediaItem m-4 d-flex flex-column">
     <img src=./assets/images/mediaItem.jpg alt="media item" />
     <div class="mt-2 p-3 d-flex justify-content-between">
         <p><b>Video One</b></p>
@@ -262,39 +270,13 @@
             class="accordion-collapse collapse"
             aria-labelledby="panelsStayOpen-headingThree"
           >
-            <div class="accordion-body">
-              <div class="research-link">
-                <a href="/" alt="link"
-                  ><h3>Example for the title of a link</h3></a
-                >
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
-              </div>
-              <div class="research-link">
-                <a href="/" alt="link"
-                  ><h3>Example for the title of a link</h3></a
-                >
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
-              </div>
-              <div class="research-link">
-                <a href="/" alt="link"
-                  ><h3>Example for the title of a link</h3></a
-                >
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
-              </div>
+            <div class="accordion-body"><div class="research-link">
+    <a href=https://www.google.com alt="link" target="_blank"
+    ><h3>Research Link 1</h3></a>
+    <p>
+        Description for research link
+    </p>
+</div>
             </div>
           </div>
         </div>
@@ -517,5 +499,17 @@
 ></script>
 <script src="./script.js"></script>
 
+    
+    <script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+        if (!user) {
+            window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+            });
+        }
+    });
+  }
+</script>
 </body>
 </html>

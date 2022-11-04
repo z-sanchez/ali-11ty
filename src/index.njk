@@ -237,7 +237,14 @@ layout: 'base.njk'
             aria-labelledby="panelsStayOpen-headingThree"
           >
             <div class="accordion-body">
-              <div class="research-link">
+
+              {%- for researchAndPub in collections.researchAndPub -%}
+
+                {% include 'researchAndPub-snippet.njk' %}
+
+              {%- endfor -%}
+
+              {# <div class="research-link">
                 <a href="/" alt="link"
                   ><h3>Example for the title of a link</h3></a
                 >
@@ -268,7 +275,7 @@ layout: 'base.njk'
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam.
                 </p>
-              </div>
+              </div> #}
             </div>
           </div>
         </div>

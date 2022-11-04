@@ -38,7 +38,12 @@ layout: 'base.njk'
   </section>
 <div class="row flex-column flex-lg-row align-self-lg-start align-content-center justify-content-center">
     <div class="col-10 d-flex flex-row flex-wrap p-0 gallery">
-        <div class="galleryImage">
+        {%- for galleryImage in collections.galleryImage -%}
+
+            {% include 'galleryImage-snippet.njk' %}
+
+        {%- endfor -%}
+        {# <div class="galleryImage">
             <img src="/assets/images/gallery/one.jpg" />
             <p>This is testing out description for image testing testing testing</p>
         </div>
@@ -73,6 +78,6 @@ layout: 'base.njk'
         <div class="galleryImage">
             <img src="/assets/images/gallery/nine.jpg" />
             <p>This is testing out description for image</p>
-        </div>
+        </div> #}
     </div>
 </div>

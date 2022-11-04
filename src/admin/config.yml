@@ -33,3 +33,11 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Start Year", name: "startYear", widget: "string" }
       - { label: "End Year", name: "endYear", widget: "string" }
+  - name: "galleryImage"
+    label: "Gallery Image"
+    folder: "src/galleryImage"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Caption", name: "caption", widget: "string" }
+      - { label: "Image Source", name: "imgSource", widget: "image" }

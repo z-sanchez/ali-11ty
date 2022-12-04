@@ -209,26 +209,47 @@
               <div
                 class="d-flex flex-wrap justify-content-center align-items-center"
               ><div class="mediaItem m-4 d-flex flex-column">
-    <img src=./assets/images/mediaItem.jpg alt="media item" />
-    <div class="mt-2 p-3 d-flex justify-content-between">
-        <p><b>Video One</b></p>
-        <p>runtime</p>
+    <div class="play-button_container">
+       <img class="play-button" src="../assets/images/play-button.png" alt="play button">
     </div>
-    <p class="px-3 pb-3">Testing Video One description</p>
+    <video class="mediaItem-video" />
+    <source src= type="video/mp4">
+    </video>
+    <div class="mediaItem_text-content"> 
+        <div class="mt-2 p-3 d-flex justify-content-between">
+            <p class="mb-0 video-title"><b>Video One</b></p>
+            <p class="mb-0 ms-auto video-runtime">runtime</p>
+        </div>
+        <p class="px-3 pb-1 video-description">Testing Video One description</p>
+    </div>
 </div><div class="mediaItem m-4 d-flex flex-column">
-    <img src=./assets/images/mediaItem.jpg alt="media item" />
-    <div class="mt-2 p-3 d-flex justify-content-between">
-        <p><b>Video Two</b></p>
-        <p>runtime</p>
+    <div class="play-button_container">
+       <img class="play-button" src="../assets/images/play-button.png" alt="play button">
     </div>
-    <p class="px-3 pb-3">Testing Video Two description</p>
+    <video class="mediaItem-video" />
+    <source src=./assets/images/testVideo2.mp4 type="video/mp4">
+    </video>
+    <div class="mediaItem_text-content"> 
+        <div class="mt-2 p-3 d-flex justify-content-between">
+            <p class="mb-0 video-title"><b>Video Two a title way tooo long for the display</b></p>
+            <p class="mb-0 ms-auto video-runtime">runtime</p>
+        </div>
+        <p class="px-3 pb-1 video-description">Testing Video Two descriptionesting Video Two descriptionesting Video Two descriptionesting Video Two description</p>
+    </div>
 </div><div class="mediaItem m-4 d-flex flex-column">
-    <img src=./assets/images/mediaItem.jpg alt="media item" />
-    <div class="mt-2 p-3 d-flex justify-content-between">
-        <p><b>Video Three</b></p>
-        <p>runtime</p>
+    <div class="play-button_container">
+       <img class="play-button" src="../assets/images/play-button.png" alt="play button">
     </div>
-    <p class="px-3 pb-3">Testing Video Three description</p>
+    <video class="mediaItem-video" />
+    <source src=./assets/images/testVideo.mp4 type="video/mp4">
+    </video>
+    <div class="mediaItem_text-content"> 
+        <div class="mt-2 p-3 d-flex justify-content-between">
+            <p class="mb-0 video-title"><b>Video Three</b></p>
+            <p class="mb-0 ms-auto video-runtime">runtime</p>
+        </div>
+        <p class="px-3 pb-1 video-description">Testing Video Three description</p>
+    </div>
 </div></div>
             </div>
           </div>
@@ -467,19 +488,19 @@
   integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
   crossorigin="anonymous"
 ></script>
-<script src="/script.js"></script>
+<script src="/scripts/play-button.js"/>
     
   </div>
-    <script>
-    if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-        if (!user) {
-            window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-            });
-        }
-    });
-  }
-</script>
+  <script>
+      if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+          if (!user) {
+              window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+              });
+          }
+      });
+    }
+  </script>
 </body>
 </html>

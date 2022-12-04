@@ -1,8 +1,15 @@
 <div class="mediaItem m-4 d-flex flex-column">
-    <img src={{video.data.imgSource}} alt="media item" />
-    <div class="mt-2 p-3 d-flex justify-content-between">
-        <p><b>{{video.data.title}}</b></p>
-        <p>{{video.data.runtime}}</p>
+    <div class="play-button_container">
+       <img class="play-button" src="../assets/images/play-button.png" alt="play button">
     </div>
-    <p class="px-3 pb-3">{{video.data.description}}</p>
+    <video class="mediaItem-video" />
+    <source src={{video.data.imgSource}} type="video/mp4">
+    </video>
+    <div class="mediaItem_text-content"> 
+        <div class="mt-2 p-3 d-flex justify-content-between">
+            <p class="mb-0 video-title"><b>{{video.data.title}}</b></p>
+            <p class="mb-0 ms-auto video-runtime">{{video.data.runtime}}</p>
+        </div>
+        <p class="px-3 pb-1 video-description">{{video.data.description}}</p>
+    </div>
 </div>

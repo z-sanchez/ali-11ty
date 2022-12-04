@@ -133,19 +133,19 @@
   integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
   crossorigin="anonymous"
 ></script>
-<script src="/script.js"></script>
+<script src="/scripts/play-button.js"/>
     
   </div>
-    <script>
-    if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-        if (!user) {
-            window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-            });
-        }
-    });
-  }
-</script>
+  <script>
+      if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+          if (!user) {
+              window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+              });
+          }
+      });
+    }
+  </script>
 </body>
 </html>

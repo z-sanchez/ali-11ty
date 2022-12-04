@@ -1,6 +1,6 @@
 ---
 title: Video One
-imgSource: "./assets/images/mediaItem.jpg"
+vidSource: "./assets/images/testVideo.mp4"
 runtime: runtime
 description: Testing Video One description
 ---

@@ -8,7 +8,7 @@ collections:
     label: "Video"
     folder: "src/video"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Video Source", name: "vidSource", widget: "file" }
@@ -19,7 +19,7 @@ collections:
     label: "Research and Pulblication Link"
     folder: "src/researchAndPub"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
       - { label: "URL", name: "link", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
@@ -28,7 +28,7 @@ collections:
     label: "Work History"
     folder: "src/work"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -38,7 +38,7 @@ collections:
     label: "Gallery Image"
     folder: "src/galleryImage"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
       - { label: "Caption", name: "caption", widget: "string" }
       - { label: "Image Source", name: "imageSource", widget: "image" }
@@ -46,21 +46,21 @@ collections:
     label: "Home Splash Header"
     folder: "src/homeSplashHeader"
     create: false
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
       - { label: "Text", name: "text", widget: "string" }
   - name: "homeSplashDescription"
     label: "Home Splash Description"
     folder: "src/homeSplashDescription"
     create: false
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
       - { label: "Text", name: "text", widget: "string" }
   - name: "homeSplashFooter"
     label: "Home Splash Footer"
     folder: "src/homeSplashFooter"
     create: false
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
       - { label: "Word One", name: "wordOne", widget: "string" }
       - { label: "Word Two", name: "wordTwo", widget: "string" }
@@ -69,6 +69,6 @@ collections:
     label: "About Section"
     folder: "src/aboutSection"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
       - { label: "Text", name: "text", widget: "text" }

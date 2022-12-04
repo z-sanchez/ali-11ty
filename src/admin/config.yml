@@ -68,7 +68,7 @@ collections:
   - name: "aboutSection"
     label: "About Section"
     folder: "src/aboutSection"
-    create: false
+    create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Text", name: "text", widget: "text" }

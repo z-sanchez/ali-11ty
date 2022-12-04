@@ -72,3 +72,10 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
       - { label: "Text", name: "text", widget: "text" }
+  - name: "portfolioSection"
+    label: "Portfolio Section"
+    folder: "src/portfolioSection"
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
+    fields:
+      - { label: "Text", name: "text", widget: "text" }

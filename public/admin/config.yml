@@ -65,3 +65,10 @@ collections:
       - { label: "Word One", name: "wordOne", widget: "string" }
       - { label: "Word Two", name: "wordTwo", widget: "string" }
       - { label: "Word three", name: "wordThree", widget: "string" }
+  - name: "aboutSection"
+    label: "About Section"
+    folder: "src/aboutSection"
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Text", name: "text", widget: "text" }

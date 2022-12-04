@@ -42,3 +42,17 @@ collections:
     fields:
       - { label: "Caption", name: "caption", widget: "string" }
       - { label: "Image Source", name: "imageSource", widget: "image" }
+  - name: "homeSplashHeader"
+    label: "Home Splash Header"
+    folder: "src/homeSplashHeader"
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Text", name: "text", widget: "string" }
+  - name: "homeSplashDescription"
+    label: "Home Splash Description"
+    folder: "src/homeSplashDescription"
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Text", name: "text", widget: "string" }

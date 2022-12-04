@@ -12,10 +12,15 @@ layout: 'base.njk'
     <div
       class="col-md-5 col-12 d-flex flex-column justify-content-center fadeIn"
     >
-      <h1 class="light-text text-center text-md-start">Lorem Ipsum</h1>
+      <h1 class="light-text text-center text-md-start">
+        {%- for homeSplashHeader in collections.homeSplashHeader -%}
+            {{homeSplashHeader.data.text}}
+        {%- endfor -%}
+      </h1>
       <p class="fs-5 text-center text-md-start light-text">
-        dolor sit amet, consectetur adipiscing elit. Praesent finibus odio vitae
-        porttitor consequat. Nunc viverra aliquam sem, ecitur ultricies odio.
+        {%- for homeSplashDescription in collections.homeSplashDescription -%}
+            {{homeSplashDescription.data.text}}
+        {%- endfor -%}
       </p>
     </div>
     <div

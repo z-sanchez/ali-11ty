@@ -1,0 +1,4 @@
+---
+tags: gallerySplashHeader
+text: Gallery
+---

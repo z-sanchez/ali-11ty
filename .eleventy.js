@@ -1,13 +1,17 @@
 const markdownIt = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
-  let options = {
+  const markdownIt = require("markdown-it");
+  const markdownItOptions = {
     html: true,
     breaks: true,
     linkify: true,
   };
-
-  eleventyConfig.setLibrary("md", markdownIt(options));
+  const md = markdownIt(markdownItOptions);
+  eleventyConfig.setLibrary("md", md);
+  eleventyConfig.addFilter("markdownify", (markdownString) =>
+    md.render(markdownString)
+  );
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addPassthroughCopy("./src/admin");
   eleventyConfig.addPassthroughCopy("./src/scripts");

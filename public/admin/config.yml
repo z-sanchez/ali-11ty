@@ -71,7 +71,7 @@ collections:
     create: false
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
-      - { label: "Content", name: "text", widget: "Content" }
+      - { label: "About Text", name: "text", widget: "markdown" }
   - name: "portfolioSection"
     label: "Portfolio Section"
     folder: "src/portfolioSection"

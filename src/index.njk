@@ -100,6 +100,7 @@ layout: 'base.njk'
         class="accordion accordion-flush"
         id="accordionPanelsStayOpenExample"
       >
+      {% if collections.video|length %}
         <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
             <button
@@ -132,7 +133,9 @@ layout: 'base.njk'
             </div>
           </div>
         </div>
+      {% endif %}
 
+      {% if collections.researchAndPub|length %}
         <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
             <button
@@ -183,7 +186,9 @@ layout: 'base.njk'
             </div>
           </div>
         </div>
-
+      {% endif %}
+      
+      {% if collections.work|length %}
         <div class="accordion-item">
           <h2 class="accordion-header" id="panelsStayOpen-headingFour">
             <button
@@ -211,70 +216,7 @@ layout: 'base.njk'
             </div>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-            <button
-              class="accordion-button collapsed fs-3"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseFive"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseFive"
-            >
-              Photo Gallery
-            </button>
-          </h2>
-          <div
-            id="panelsStayOpen-collapseFive"
-            class="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingFive"
-          >
-            <div class="accordion-body d-flex justify-content-center">
-              <div
-                class="row my-4 flex-column flex-lg-row align-self-lg-start align-content-center justify-content-center"
-              >
-                <div class="col-4 d-flex flex-column p-0">
-                  <img src="./assets/images/gallery/one.jpg" />
-                  <img src="./assets/images/gallery/two.jpg" />
-                  <img src="./assets/images/gallery/three.jpg" />
-                </div>
-                <div class="col-4 d-flex flex-column p-0">
-                  <img src="./assets/images/gallery/four.jpg" />
-                  <img src="./assets/images/gallery/five.jpg" />
-                  <img src="./assets/images/gallery/six.jpg" />
-                </div>
-                <div class="col-4 d-flex flex-column p-0">
-                  <img src="./assets/images/gallery/seven.jpg" />
-                  <img src="./assets/images/gallery/eight.jpg" />
-                  <img src="./assets/images/gallery/nine.jpg" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingSix">
-            <button
-              class="accordion-button collapsed fs-3"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseSix"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseSix"
-            >
-              Other
-            </button>
-          </h2>
-          <div
-            id="panelsStayOpen-collapseSix"
-            class="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingSix"
-          >
-            <div class="accordion-body"></div>
-          </div>
-        </div>
+      {% endif %}
       </div>
     </div>
   </section>

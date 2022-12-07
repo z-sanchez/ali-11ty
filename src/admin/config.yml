@@ -68,10 +68,10 @@ collections:
   - name: "aboutSection"
     label: "About Section"
     folder: "src/aboutSection"
-    create: true
+    create: false
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
-      - { label: "Text", name: "text", widget: "text" }
+      - { label: "Content", name: "text", widget: "Content" }
   - name: "portfolioSection"
     label: "Portfolio Section"
     folder: "src/portfolioSection"

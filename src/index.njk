@@ -62,12 +62,9 @@ layout: 'base.njk'
     class="row d-flex flex-column flex-md-row justify-content-center align-items-center section-spacing"
   >
     <div class="col-md-5 col-8 mx-5">
-      <h2 class="pb-2 text-center text-md-start">About</h2>      
-      {%- for aboutSection in collections.aboutSection -%}
-        <p class="fs-5 pb-4 text-center text-md-start">
-            {{aboutSection.data.text}}
-        </p>
-      {%- endfor -%}
+      <h2 class="pb-2 text-center text-md-start">About</h2>
+        {% set snippet %}{% include "src/aboutSection/2022-12-04-20-00-51.md" %}{% endset %}
+        {% markdown snippet %}
       <button class="px-4 py-2 fs-5 contactCTA light-text d-none d-md-block">
         Contact
       </button>

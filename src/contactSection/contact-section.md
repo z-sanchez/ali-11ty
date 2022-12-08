@@ -1,4 +1,4 @@
 ---
 tags: contactSection
-contactMessage: Lorem
+contactMessage: Hello
 ---

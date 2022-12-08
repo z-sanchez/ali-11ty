@@ -10,14 +10,10 @@ layout: 'base.njk'
       class="col-md-5 col-12 d-flex flex-column justify-content-center fadeIn"
     >
       <h1 class="light-text text-center text-md-start"> 
-        {%- for gallerySplashHeader in collections.gallerySplashHeader -%}
-            {{gallerySplashHeader.data.text}}
-        {%- endfor -%}
+        {{collections.siteTextContent[0].data.gallerySplashHeader}}
       </h1>
       <p class="fs-5 text-center text-md-start light-text">
-        {%- for gallerySplashDescription in collections.gallerySplashDescription -%}
-            {{gallerySplashDescription.data.text}}
-        {%- endfor -%}
+        {{collections.siteTextContent[0].data.gallerySplashDescription}}
       </p>
     </div>
     <div

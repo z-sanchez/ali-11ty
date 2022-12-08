@@ -42,29 +42,13 @@ collections:
     fields:
       - { label: "Caption", name: "caption", widget: "string" }
       - { label: "Image Source", name: "imageSource", widget: "image" }
-  - name: "homeSplashHeader"
-    label: "Home Splash Header"
-    folder: "src/homeSplashHeader"
+  - name: "headshot"
+    label: "Headshot Image"
+    folder: "src/headshot"
     create: false
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
-      - { label: "Text", name: "text", widget: "string" }
-  - name: "homeSplashDescription"
-    label: "Home Splash Description"
-    folder: "src/homeSplashDescription"
-    create: false
-    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
-    fields:
-      - { label: "Text", name: "text", widget: "string" }
-  - name: "homeSplashFooter"
-    label: "Home Splash Footer"
-    folder: "src/homeSplashFooter"
-    create: false
-    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
-    fields:
-      - { label: "Word One", name: "wordOne", widget: "string" }
-      - { label: "Word Two", name: "wordTwo", widget: "string" }
-      - { label: "Word three", name: "wordThree", widget: "string" }
+      - { label: "Image Source", name: "imageSource", widget: "image" }
   - name: "aboutSection"
     label: "About Section"
     folder: "src/aboutSection"
@@ -72,32 +56,6 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
       - { label: "About Text", name: "body", widget: "markdown" }
-  - name: "portfolioSection"
-    label: "Portfolio Section"
-    folder: "src/portfolioSection"
-    create: false
-    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
-    fields:
-      - { label: "Text", name: "text", widget: "text" }
-  - name: "email"
-    label: "Site Email"
-    folder: "src/email"
-    create: false
-    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
-    fields:
-      - { label: "Email", name: "email", widget: "text" }
-  - name: "contactSection"
-    label: "Contact Section"
-    folder: "src/contactSection"
-    create: false
-    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
-    fields:
-      - {
-          label: "Contact Section Text",
-          name: "contactMessage",
-          widget: "text",
-        }
-  - name: "socialMedia"
     label: "Social Media"
     folder: "src/socialMedia"
     create: false
@@ -105,3 +63,32 @@ collections:
     fields:
       - { label: "LinkedIn", name: "linkedIn", widget: "text" }
       - { label: "Twitter", name: "twitter", widget: "text" }
+  - name: "siteTextContent"
+    label: "Site Text Content"
+    folder: "src/siteTextContent"
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
+    fields:
+      - { label: "Home Splash Header", name: "homeSplashHeader", widget: "string" }
+      - { label: "Home Splash Description", name: "homeSplashDescription", widget: "string" }
+      - { label: "Splash Footer Text One", name: "textOne", widget: "string" }
+      - { label: "Splash Footer Text Two", name: "textTwo", widget: "string" }
+      - { label: "Splash Footer Text Three", name: "textThree", widget: "string" }
+      - { label: "Portfolio Section", name: "portfolioSectionText", widget: "text" }
+      - { label: "Accordion One Heading (Videos)", name: "accordionOneHeading", widget: "text" }
+      - { label: "Accordion Two Heading (Text Links)", name: "accordionTwoHeading", widget: "text" }
+      - { label: "Accordion Three Heading (Work History)", name: "accordionThreeHeading", widget: "text" }
+      - { label: "Gallery Splash Header", name: "gallerySplashHeader", widget: "string" }
+      - { label: "Gallery Splash Description", name: "gallerySplashDescription", widget: "string" }
+
+      - { label: "Contact Section", name: "contactSectionText", widget: "text" }
+  - name: "socialAndEmail"
+      label: "Social and Email"
+      folder: "src/socialAndEmail"
+      create: false
+      slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
+      fields:
+        - { label: "LinkedIn", name: "linkedIn", widget: "text"}
+        - { label: "Twitter", name: "twitter", widget: "text" }
+        - { label: "Email", name: "email", widget: "text" }
+          

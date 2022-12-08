@@ -1,4 +1,4 @@
 ---
 tags: email
-email: abforbes@txstate.edu
+email: zieksanchez3@gmail.com
 ---

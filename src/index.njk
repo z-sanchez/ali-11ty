@@ -59,17 +59,21 @@ layout: 'base.njk'
       <h2 class="pb-2 text-center text-md-start">About</h2>
         {% set snippet %}{% include "src/aboutSection/2022-12-04-20-00-51.md" %}{% endset %}
         {% markdown snippet %}
+        <a href="#contact">
       <button class="px-4 py-2 fs-5 contactCTA light-text d-none d-md-block">
         Contact
       </button>
+        </a>
     </div>
     <div class="col-md-3 col-10 mx-4 d-flex flex-column">
       <img id="headshot" src="{{collections.headshot[0].data.imageSource}}" alt="headshot" />
-      <button
-        class="px-4 w-50 align-self-center my-5 py-2 fs-5 contactCTA light-text d-block d-md-none"
-      >
-        Contact
-      </button>
+      <a href="#contact" class="align-self-center">
+        <button
+          class="px-4 my-5 py-2 fs-5 contactCTA light-text d-block d-md-none"
+        >
+          Contact
+        </button>
+      </a>
     </div>
   </section>
 

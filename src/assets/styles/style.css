@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   overflow-x: hidden;
   line-height: 1.6;
@@ -76,10 +80,15 @@ ul {
 .contactCTA {
   border: none;
   background-color: black;
-  text-decoration: none;
   font-family: overpass;
   font-weight: 300;
   outline: 3px solid rgba(0, 0, 0, 0);
+}
+
+.contactCTA,
+.contactCTA:hover,
+.contactCTA:visited {
+  text-decoration: none;
 }
 
 .contactCTA:hover {
@@ -379,5 +388,9 @@ ul {
 @media screen and (max-width: 767px) {
   .welcome-splash {
     background-position: 75% 0%;
+  }
+
+  .formatAboutText p {
+    text-align: center;
   }
 }

@@ -79,3 +79,29 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
       - { label: "Text", name: "text", widget: "text" }
+  - name: "email"
+    label: "Site Email"
+    folder: "src/email"
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
+    fields:
+      - { label: "Email", name: "email", widget: "text" }
+  - name: "contactSection"
+    label: "Contact Section"
+    folder: "src/email"
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
+    fields:
+      - {
+          label: "Contact Section Text",
+          name: "contactMessage",
+          widget: "text",
+        }
+  - name: "socialMedia"
+    label: "Social Media"
+    folder: "src/socialMedia"
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
+    fields:
+      - { label: "Instagram", name: "instagram", widget: "text" }
+      - { label: "Twitter", name: "twitter", widget: "text" }

@@ -1,6 +1,6 @@
 ---
 tags: homeSplashFooter
-wordOne: Sports
-wordTwo: TV
-wordThree: Podcast
+wordOne: Test
+wordTwo: Test2
+wordThree: Test3
 ---

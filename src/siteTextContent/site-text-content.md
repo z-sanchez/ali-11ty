@@ -1,5 +1,6 @@
 ---
 title: Site Text Content
+tags: siteTextContent
 homeSplashHeader: Home Splash Header Test
 homeSplashDescription: Home Splash Description Test
 textOne: Sports
@@ -12,6 +13,4 @@ accordionThreeHeading: Work History Test
 gallerySplashHeader: Gallery Splash Header Test
 gallerySplashDescription: Gallery Splash Description Test
 contactSectionText: Contact Section Text Test
-title: Site Text Content
-tags: siteTextContent
 ---

@@ -56,13 +56,6 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
       - { label: "About Text", name: "body", widget: "markdown" }
-    label: "Social Media"
-    folder: "src/socialMedia"
-    create: false
-    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
-    fields:
-      - { label: "LinkedIn", name: "linkedIn", widget: "text" }
-      - { label: "Twitter", name: "twitter", widget: "text" }
   - name: "siteTextContent"
     label: "Site Text Content"
     folder: "src/siteTextContent"
@@ -80,7 +73,6 @@ collections:
       - { label: "Accordion Three Heading (Work History)", name: "accordionThreeHeading", widget: "text" }
       - { label: "Gallery Splash Header", name: "gallerySplashHeader", widget: "string" }
       - { label: "Gallery Splash Description", name: "gallerySplashDescription", widget: "string" }
-
       - { label: "Contact Section", name: "contactSectionText", widget: "text" }
   - name: "socialAndEmail"
       label: "Social and Email"

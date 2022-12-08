@@ -88,7 +88,7 @@ collections:
       - { label: "Email", name: "email", widget: "text" }
   - name: "contactSection"
     label: "Contact Section"
-    folder: "src/email"
+    folder: "src/contactSection"
     create: false
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
@@ -103,5 +103,5 @@ collections:
     create: false
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
-      - { label: "Instagram", name: "instagram", widget: "text" }
+      - { label: "LinkedIn", name: "linkedIn", widget: "text" }
       - { label: "Twitter", name: "twitter", widget: "text" }

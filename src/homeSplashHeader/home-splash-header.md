@@ -1,4 +1,4 @@
 ---
 tags: homeSplashHeader
-text: Lorem Ipsum
+text: This is the Header
 ---

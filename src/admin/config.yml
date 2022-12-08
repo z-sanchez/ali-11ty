@@ -62,25 +62,60 @@ collections:
     create: false
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
     fields:
-      - { label: "Home Splash Header", name: "homeSplashHeader", widget: "string" }
-      - { label: "Home Splash Description", name: "homeSplashDescription", widget: "string" }
+      - {
+          label: "Home Splash Header",
+          name: "homeSplashHeader",
+          widget: "string",
+        }
+      - {
+          label: "Home Splash Description",
+          name: "homeSplashDescription",
+          widget: "string",
+        }
       - { label: "Splash Footer Text One", name: "textOne", widget: "string" }
       - { label: "Splash Footer Text Two", name: "textTwo", widget: "string" }
-      - { label: "Splash Footer Text Three", name: "textThree", widget: "string" }
-      - { label: "Portfolio Section", name: "portfolioSectionText", widget: "text" }
-      - { label: "Accordion One Heading (Videos)", name: "accordionOneHeading", widget: "text" }
-      - { label: "Accordion Two Heading (Text Links)", name: "accordionTwoHeading", widget: "text" }
-      - { label: "Accordion Three Heading (Work History)", name: "accordionThreeHeading", widget: "text" }
-      - { label: "Gallery Splash Header", name: "gallerySplashHeader", widget: "string" }
-      - { label: "Gallery Splash Description", name: "gallerySplashDescription", widget: "string" }
+      - {
+          label: "Splash Footer Text Three",
+          name: "textThree",
+          widget: "string",
+        }
+      - {
+          label: "Portfolio Section",
+          name: "portfolioSectionText",
+          widget: "text",
+        }
+      - {
+          label: "Accordion One Heading (Videos)",
+          name: "accordionOneHeading",
+          widget: "text",
+        }
+      - {
+          label: "Accordion Two Heading (Text Links)",
+          name: "accordionTwoHeading",
+          widget: "text",
+        }
+      - {
+          label: "Accordion Three Heading (Work History)",
+          name: "accordionThreeHeading",
+          widget: "text",
+        }
+      - {
+          label: "Gallery Splash Header",
+          name: "gallerySplashHeader",
+          widget: "string",
+        }
+      - {
+          label: "Gallery Splash Description",
+          name: "gallerySplashDescription",
+          widget: "string",
+        }
       - { label: "Contact Section", name: "contactSectionText", widget: "text" }
   - name: "socialAndEmail"
-      label: "Social and Email"
-      folder: "src/socialAndEmail"
-      create: false
-      slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
-      fields:
-        - { label: "LinkedIn", name: "linkedIn", widget: "text"}
-        - { label: "Twitter", name: "twitter", widget: "text" }
-        - { label: "Email", name: "email", widget: "text" }
-          
+    label: "Social and Email"
+    folder: "src/socialAndEmail"
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
+    fields:
+      - { label: "LinkedIn", name: "linkedIn", widget: "text" }
+      - { label: "Twitter", name: "twitter", widget: "text" }
+      - { label: "Email", name: "email", widget: "text" }

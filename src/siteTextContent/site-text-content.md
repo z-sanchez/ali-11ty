@@ -1,4 +1,5 @@
 ---
+title: Site Text Content
 homeSplashHeader: Home Splash Header Test
 homeSplashDescription: Home Splash Description Test
 textOne: Sports
